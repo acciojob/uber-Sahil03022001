@@ -85,7 +85,7 @@ public class CustomerServiceImpl implements CustomerService {
 			}
 		}
 
-		throw new NoSuchElementException();
+		throw new Exception("No cab available!");
 	}
 
 	@Override

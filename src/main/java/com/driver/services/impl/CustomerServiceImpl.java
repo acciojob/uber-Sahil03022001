@@ -10,6 +10,7 @@ import com.driver.repository.DriverRepository;
 import com.driver.repository.TripBookingRepository;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -84,7 +85,7 @@ public class CustomerServiceImpl implements CustomerService {
 			}
 		}
 
-		throw new RuntimeException("No cab available!");
+		throw new NoSuchElementException();
 	}
 
 	@Override
